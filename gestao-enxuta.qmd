@@ -1,0 +1,144 @@
+---
+title: "Gestão Enxuta"
+subtitle: "Conceitos"
+author: "Marcos Abreu"
+date: "Agosto 2026"
+format: 
+  letterbox-revealjs:
+    theme: [default, style.scss]
+revealjs-plugins:
+  - chat-bubbles
+filters:
+   - roughnotation
+---
+
+## 
+
+::: {.columns}
+::: {.column }
+::: {.blockquote}
+Se eu vi mais longe, foi por estar sobre ombros de gigantes.
+:::
+:::
+::: {.column}
+![Isaac Newton](https://upload.wikimedia.org/wikipedia/commons/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original)
+:::
+:::
+:::
+
+## 
+
+::: {.columns}
+::: {.column }
+### Objetivo de Aprendizagem:
+- O aluno será capaz de identificar os principais conceitos da Gestão Enxuta e a mapear os defeitos a serem evitados em um projeto.
+:::
+::: {.column}
+![O Pensador - Auguste Rodin](https://upload.wikimedia.org/wikipedia/commons/a/a4/Le_Penseur_by_Rodin_%28Kunsthalle_Bielefeld%29_2014-04-10.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original)
+:::
+:::
+:::
+
+## 
+
+::: {.center-message}
+![Quem é ele?](https://upload.wikimedia.org/wikipedia/commons/2/27/Henry_Ford_portrait_1915_original_%283x4_cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original)
+:::
+
+## 
+
+::: {.center-message}
+![Henry Ford](https://upload.wikimedia.org/wikipedia/commons/2/27/Henry_Ford_portrait_1915_original_%283x4_cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original) 
+
+#### O que ele fez?
+:::
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+## Chat
+::: {.chat}
+::: {.bubble-right}
+Hey, are you coming tonight?
+:::
+
+::: {.fragment .bubble-left}
+Yeah! What time does it start?
+:::
+
+::: {.fragment .bubble-right}
+Doors open at 7
+:::
+:::
+
+## roughnotations
+
+[underlined phrase]{.rn-fragment rn-type=underline rn-color=red}
+
+## .image-left {style="text-align: right;"}
+
+::: columns
+::: {.column width="55%"}
+:::
+::: {.column width="45%"}
+It is therefore recommened that you use [multiple columns](https://quarto.org/docs/presentations/index.html#multiple-columns) to only have text on the background area
+:::
+:::
+
+![](flowers-two.jpeg){.image-left}
+
+## {background-image="https://placekitten.com/100/100" background-size="100px" background-repeat="repeat"}
+
+::: r-fit-text
+[background images]{style="color: hotpink;"}
+:::
+
+## Setting background colors {background-color="aquamarine"}
+
+you can set your background as you normally would
+
+## Video Slide Title {background-video="video.mp4" background-video-loop="true" background-video-muted="true"}
+
+This slides's background video will play in a loop with audio muted.
+
+## Slide Title {background-iframe="https://example.com"}
+
+## Further Modifying theme
+
+If you want to modify theme, you can specify the `.scss` my modifying the yaml to look like this
+
+``` yaml
+format: 
+  letterbox-revealjs:
+    theme: [default, style.scss]
+```
+
+## Modifying letterbox background
+
+The background colors can be with with, where `#444444` represents the new background color and `#222222` represents the color of the shadow
+
+``` css
+.quarto-light {
+  background-color: #444444;
+}
+
+.quarto-dark {
+  background-color: #444444;
+}
+
+.slides {
+  box-shadow: #222222 0px 0px 30px 0px;
+}
+```
