@@ -183,7 +183,7 @@ Kaizen é sobre mudar o comportamento de alguém para beneficiar os outros. É u
 - A forma mais efetiva de identificar o "trabalho verdadeiro" da "movimentação" é através da participação direta no local de trabalho (Gemba).
 :::
 
-::: {.column style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: right; gap: 10px; text-align: right;"}
+::: {.column style="flex: 1; display: flex; flex-direction: column; justify-content: top; align-items: right; gap: 10px; text-align: right;"}
 ![](img/move-around.png){style="max-height: 280px;"}
 ![](img/true-work.png){style="max-height: 260px;"}
 
