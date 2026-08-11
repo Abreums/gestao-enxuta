@@ -157,8 +157,59 @@ Taiishi Ohno
 :::
 Kaizen é sobre mudar o comportamento de alguém para beneficiar os outros. É um estado de espírito.
 
+##
+
+![](img/kaizen-kairyo.png)
+
+##
+
+### Jidoka
+
+- O TPS possui 2 pilares: Just-in-Time e Jidoka.
+- Manuais _Lean_ explicam que a palavra **Jidoka** significa "humanos ajudando máquinas quando erros acontecem".
+- Costuma ser traduzido como "automação com um toque humano".
+
+##
+
+### Trabalho Verdadeiro & Gemba
 
 
+::: {.columns style="display: flex;"}
+
+::: {.column width="60%" style="flex: 1;font-size:0.7em"}
+- Ohno queria que o trabalhador fosse capaz de diferenciar o "trabalho verdadeiro" de "movimentação".
+  - Todo movimento que agrega valor ao produto é chamado de "trabalho verdadeiro".
+  - Movimento que não agrega valor é chamado de "movimentação" e é considerado um desperdício.
+- A forma mais efetiva de identificar o "trabalho verdadeiro" da "movimentação" é através da participação direta no local de trabalho (Gemba).
+:::
+
+::: {.column style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: right; gap: 10px; text-align: right;"}
+![](img/move-around.png){style="max-height: 280px;"}
+![](img/true-work.png){style="max-height: 260px;"}
+
+:::
+
+:::
+
+
+
+
+
+## 
+
+![](img/7-wastes.png)
+
+## 
+
+```{r}
+library(tidyverse)
+library(gt)
+wastes <- tibble(
+  `Desperdícios na Manufatura` = c("Transporte", "Estoque", "Movimentação", "Espera", "Produção em Excesso", "Processamento em Excesso", "Defeitos"),
+  `Desperdícios em TI` = c("Hand-offs", "Trabalho parcial", "Troca de tarefas", "Atrasos", "Escopo adicional", "Reaprendizagem", "Defeitos")
+)
+wastes |> gt() |> opt_stylize(style = 3)
+```
 
 ## roughnotations
 
