@@ -247,3 +247,19 @@ Citações
 
   height: 100%;
 }
+
+/* =========================
+   Container
+   =========================*/
+
+.container{
+  display: flex;
+}
+.content {
+  flex: 1;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

@@ -98,8 +98,28 @@
     code span.va { color: #00e0e0; } /* Variable */
     code span.vs { color: #abe338; } /* VerbatimString */
     code span.wa { color: #dcc6e0; } /* Warning */
-  </style>
-  <link rel="stylesheet" href="gestao-enxuta_files/libs/revealjs/dist/theme/quarto-0138430ae6d43262a3f7e5d02c791648.css">
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="gestao-enxuta_files/libs/revealjs/dist/theme/quarto-85d7cae26412712a1568fb502f0948e9.css">
   <link href="gestao-enxuta_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="gestao-enxuta_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="gestao-enxuta_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -248,57 +268,102 @@ Marcos Abreu
 </section>
 <section id="section-2" class="slide level2">
 <h2></h2>
-<div class="center-message">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/2/27/Henry_Ford_portrait_1915_original_%283x4_cropped%29.png?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=original"></p>
-<figcaption>Quem é ele?</figcaption>
-</figure>
-</div>
+<div class="content">
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/3/31/Henry_Ford%2C_head-and-shoulders_portrait%2C_facing_slightly_left%29_-_Hartsook_photo_LCCN94506959_Trim.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=original" style="width:30.0%"> <br> Quem é ele?</p>
 </div>
 </section>
 <section id="section-3" class="slide level2">
 <h2></h2>
-<div class="center-message">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/2/27/Henry_Ford_portrait_1915_original_%283x4_cropped%29.png?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=original"></p>
-<figcaption>Henry Ford</figcaption>
-</figure>
-</div>
-<h4 id="o-que-ele-fez">O que ele fez?</h4>
+<div class="content">
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/3/31/Henry_Ford%2C_head-and-shoulders_portrait%2C_facing_slightly_left%29_-_Hartsook_photo_LCCN94506959_Trim.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=original" style="width:30.0%" alt="Henry Ford"><br>
+<br> Henry Ford <br> <br> <span class="bigger">O que ele fez?</span></p>
 </div>
 </section>
-<section id="bullets" class="slide level2">
-<h2>Bullets</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes:</p>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<div class="content">
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/d/d6/A-line1913.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=original" style="width:70.0%" alt="Linha de Produção"><br>
+<br> <a href="https://en.wikipedia.org/wiki/Assembly_line">Linha de Produção</a></p>
+</div>
+</section>
+<section id="section-5" class="slide level2 image-right">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<h3 id="o-pensamento-de-henry-ford">O pensamento de Henry Ford</h3>
+<div style="font-size: 0.9em;font-style: italic;">
 <ul>
-<li>Content authored with markdown</li>
-<li>Output from executable code</li>
+<li>Nada é difícil se for dividido em pequenas partes.</li>
+<li>Não encontre um defeito, encontre uma solução.</li>
+<li>O cliente pode ter o carro que quiser, contanto que seja preto.</li>
+<li>Pensar é o trabalho mais difícil que existe. Talvez, por isso, tão poucos se dediquem a ele.</li>
 </ul>
+</div>
+</div><div class="column" style="width:55%;">
+
+</div></div>
+
+<img data-src="https://upload.wikimedia.org/wikipedia/commons/3/31/Henry_Ford%2C_head-and-shoulders_portrait%2C_facing_slightly_left%29_-_Hartsook_photo_LCCN94506959_Trim.jpg?utm_source=commons.wikimedia.org&amp;utm_campaign=index&amp;utm_content=original" class="image-right r-stretch"></section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<div class="content">
+<p><img data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGUXaAxsGsAxYefQmXkx0jP8xJWGu7xSedB_rNaDABBQ&amp;s=10.png" style="width:260.0%"> <br> Quem é ele?</p>
+</div>
 </section>
-<section id="code" class="slide level2">
-<h2>Code</h2>
-<p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<div class="content">
+<p><img data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGUXaAxsGsAxYefQmXkx0jP8xJWGu7xSedB_rNaDABBQ&amp;s=10.png" style="width:260.0%"> <br> Taiishi Ohno <br> <br> <span class="bigger">O que ele fez?</span></p>
 </div>
 </section>
-<section id="chat" class="slide level2">
-<h2>Chat</h2>
-<div class="chat">
-<div class="bubble-right">
-<p>Hey, are you coming tonight?</p>
+<section id="section-8" class="slide level2">
+<h2></h2>
+<div class="content">
+<p><img data-src="img/TPS.png" style="width:70.0%" alt="TPS"> <br> <a href="https://en.wikipedia.org/wiki/Toyota_Production_System">Toyota Production System</a></p>
 </div>
-<div class="fragment bubble-left">
-<p>Yeah! What time does it start?</p>
+</section>
+<section id="section-9" class="slide level2 image-right">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<h3 id="o-pensamento-de-taiishi-ohno">O pensamento de Taiishi Ohno</h3>
+<div style="font-size: 0.7em;font-style: italic;">
+<ul>
+<li>A ausência de problemas é o maior de todos os problemas.</li>
+<li>Sem padrões não há melhorias. Os padrões não devem ser forçados de cima para baixo, mas criados pelos próprios trabalhadores.</li>
+<li>O método Toyota não é o de criar resultados trabalhando duro. É um sistema que considera que não há limites para a criatividade das pessoas. As pessoas não vêm para a Toyota para trabalhar, elas vêm para pensar.</li>
+<li>O local de trabalho é um professor. Você só consegue achar respostas no local de trabalho.</li>
+</ul>
 </div>
-<div class="fragment bubble-right">
-<p>Doors open at 7</p>
+</div><div class="column" style="width:55%;">
+
+</div></div>
+
+<img data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGUXaAxsGsAxYefQmXkx0jP8xJWGu7xSedB_rNaDABBQ&amp;s=10.png" class="image-right r-stretch"></section>
+<section id="section-10" class="slide level2">
+<h2></h2>
+<h3 id="conceitos-da-gestão-enxuta">Conceitos da Gestão Enxuta</h3>
+<div class="container">
+<p><span class="content">Conforme <span class="citation" data-cites="nakamuro_re-translating_2017">(<a href="#/referências" role="doc-biblioref" onclick="">Nakamuro 2017</a>)</span></span></p>
 </div>
-</div>
+</section>
+<section id="section-11" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column">
+<h3 id="kaizen">Kaizen</h3>
+<ul>
+<li>Foi traduzido livremente como “Melhoria Contínua”, mas possui um significado mais profundo, conforme pretendido por Taiishi Ohno.</li>
+<li>Kaizen não é sobre melhorias físicas.</li>
+</ul>
+</div><div class="column">
+<h3 id="kairyo">Kairyo</h3>
+<ul>
+<li>Ohno costumava utilizar a palavra japoneza Kairyo para descrever a melhoria contínua que se concentra principalmente em melhorias físicas, de processos, tecnologias ou máquinas.</li>
+</ul>
+</div></div>
+<p>Kaizen é sobre mudar o comportamento de alguém para beneficiar os outros.<br>
+Kaizen é um estado de espírito</p>
 </section>
 <section id="roughnotations" class="slide level2">
 <h2>roughnotations</h2>
@@ -314,7 +379,7 @@ Marcos Abreu
 </div></div>
 
 <img data-src="flowers-two.jpeg" class="image-left r-stretch"></section>
-<section id="section-4" class="slide level2" data-background-image="https://placekitten.com/100/100" data-background-size="100px" data-background-repeat="repeat">
+<section id="section-12" class="slide level2" data-background-image="https://placekitten.com/100/100" data-background-size="100px" data-background-repeat="repeat">
 <h2></h2>
 <div class="r-fit-text">
 <p><span style="color: hotpink;">background images</span></p>
@@ -334,24 +399,32 @@ Marcos Abreu
 <section id="further-modifying-theme" class="slide level2">
 <h2>Further Modifying theme</h2>
 <p>If you want to modify theme, you can specify the <code>.scss</code> my modifying the yaml to look like this</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href=""></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb2-2"><a href=""></a><span class="at">  </span><span class="fu">letterbox-revealjs</span><span class="kw">:</span></span>
-<span id="cb2-3"><a href=""></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">default</span><span class="kw">,</span><span class="at"> style.scss</span><span class="kw">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href=""></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb1-2"><a href=""></a><span class="at">  </span><span class="fu">letterbox-revealjs</span><span class="kw">:</span></span>
+<span id="cb1-3"><a href=""></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">default</span><span class="kw">,</span><span class="at"> style.scss</span><span class="kw">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="modifying-letterbox-background" class="slide level2">
 <h2>Modifying letterbox background</h2>
 <p>The background colors can be with with, where <code>#444444</code> represents the new background color and <code>#222222</code> represents the color of the shadow</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb3-1"><a href=""></a><span class="fu">.quarto-light</span> {</span>
-<span id="cb3-2"><a href=""></a>  <span class="kw">background-color</span><span class="ch">:</span> <span class="cn">#444444</span><span class="op">;</span></span>
-<span id="cb3-3"><a href=""></a>}</span>
-<span id="cb3-4"><a href=""></a></span>
-<span id="cb3-5"><a href=""></a><span class="fu">.quarto-dark</span> {</span>
-<span id="cb3-6"><a href=""></a>  <span class="kw">background-color</span><span class="ch">:</span> <span class="cn">#444444</span><span class="op">;</span></span>
-<span id="cb3-7"><a href=""></a>}</span>
-<span id="cb3-8"><a href=""></a></span>
-<span id="cb3-9"><a href=""></a><span class="fu">.slides</span> {</span>
-<span id="cb3-10"><a href=""></a>  <span class="kw">box-shadow</span><span class="ch">:</span> <span class="cn">#222222</span> <span class="dv">0</span><span class="dt">px</span> <span class="dv">0</span><span class="dt">px</span> <span class="dv">30</span><span class="dt">px</span> <span class="dv">0</span><span class="dt">px</span><span class="op">;</span></span>
-<span id="cb3-11"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb2-1"><a href=""></a><span class="fu">.quarto-light</span> {</span>
+<span id="cb2-2"><a href=""></a>  <span class="kw">background-color</span><span class="ch">:</span> <span class="cn">#444444</span><span class="op">;</span></span>
+<span id="cb2-3"><a href=""></a>}</span>
+<span id="cb2-4"><a href=""></a></span>
+<span id="cb2-5"><a href=""></a><span class="fu">.quarto-dark</span> {</span>
+<span id="cb2-6"><a href=""></a>  <span class="kw">background-color</span><span class="ch">:</span> <span class="cn">#444444</span><span class="op">;</span></span>
+<span id="cb2-7"><a href=""></a>}</span>
+<span id="cb2-8"><a href=""></a></span>
+<span id="cb2-9"><a href=""></a><span class="fu">.slides</span> {</span>
+<span id="cb2-10"><a href=""></a>  <span class="kw">box-shadow</span><span class="ch">:</span> <span class="cn">#222222</span> <span class="dv">0</span><span class="dt">px</span> <span class="dv">0</span><span class="dt">px</span> <span class="dv">30</span><span class="dt">px</span> <span class="dv">0</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb2-11"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="referências" class="slide level2 scrollable smaller">
+<h2>Referências</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-nakamuro_re-translating_2017" class="csl-entry" role="listitem">
+Nakamuro, Jun. 2017. <span>“Re-Translating Lean from Its Origin. Re-Translating Lean from Its Origin.”</span> January 4, 2017. <a href="https://www.linkedin.com/pulse/re-translating-lean-from-its-origin-jun-nakamuro">https://www.linkedin.com/pulse/re-translating-lean-from-its-origin-jun-nakamuro</a>.
+</div>
+</div>
 
 </section>
     </div>
@@ -708,44 +781,6 @@ Marcos Abreu
     if (progress_div !== null) {
       document.querySelector(".slides").prepend(progress_div);
     }
-    </script>
-
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
     </script>
 
     <script id="quarto-html-after-body" type="application/javascript">

@@ -10,6 +10,7 @@ revealjs-plugins:
   - chat-bubbles
 filters:
    - roughnotation
+bibliography: references.bib
 ---
 
 ## 
@@ -41,47 +42,123 @@ Se eu vi mais longe, foi por estar sobre ombros de gigantes.
 
 ## 
 
-::: {.center-message}
-![Quem é ele?](https://upload.wikimedia.org/wikipedia/commons/2/27/Henry_Ford_portrait_1915_original_%283x4_cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original)
+::: {.content}
+![](https://upload.wikimedia.org/wikipedia/commons/3/31/Henry_Ford%2C_head-and-shoulders_portrait%2C_facing_slightly_left%29_-_Hartsook_photo_LCCN94506959_Trim.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original){width="30%"}
+<br/>
+Quem é ele?
+:::
+
+
+## 
+
+::: {.content}
+![Henry Ford](https://upload.wikimedia.org/wikipedia/commons/3/31/Henry_Ford%2C_head-and-shoulders_portrait%2C_facing_slightly_left%29_-_Hartsook_photo_LCCN94506959_Trim.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original){width="30%"}  
+<br/>
+Henry Ford
+<br/>
+<br/>
+[O que ele fez?]{.bigger}
+
+:::
+## 
+
+::: {.content}
+![Linha de Produção](https://upload.wikimedia.org/wikipedia/commons/d/d6/A-line1913.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original){width="70%"}  
+<br/>
+[Linha de Produção](https://en.wikipedia.org/wiki/Assembly_line)
+:::
+
+## {.image-right}
+
+::: columns
+::: {.column width="45%"}
+### O pensamento de Henry Ford
+::: {style="font-size: 0.9em;font-style: italic;"}
+- Nada é difícil se for dividido em pequenas partes.
+- Não encontre um defeito, encontre uma solução.
+- O cliente pode ter o carro que quiser, contanto que seja preto.
+- Pensar é o trabalho mais difícil que existe. Talvez, por isso, tão poucos se dediquem a ele.
+:::
+:::
+::: {.column width="55%"}
+:::
+:::
+
+![](https://upload.wikimedia.org/wikipedia/commons/3/31/Henry_Ford%2C_head-and-shoulders_portrait%2C_facing_slightly_left%29_-_Hartsook_photo_LCCN94506959_Trim.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original){.image-right}
+
+## 
+
+::: {.content}
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGUXaAxsGsAxYefQmXkx0jP8xJWGu7xSedB_rNaDABBQ&s=10){width="260%"}
+<br/>
+Quem é ele?
+
 :::
 
 ## 
 
-::: {.center-message}
-![Henry Ford](https://upload.wikimedia.org/wikipedia/commons/2/27/Henry_Ford_portrait_1915_original_%283x4_cropped%29.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original) 
+::: {.content}
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGUXaAxsGsAxYefQmXkx0jP8xJWGu7xSedB_rNaDABBQ&s=10){width="260%"}
+<br/>
+Taiishi Ohno
+<br/>
+<br/>
+[O que ele fez?]{.bigger}
 
-#### O que ele fez?
 :::
 
-## Bullets
 
-When you click the **Render** button a document will be generated that includes:
+## 
 
--   Content authored with markdown
--   Output from executable code
-
-## Code
-
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
-```
-
-## Chat
-::: {.chat}
-::: {.bubble-right}
-Hey, are you coming tonight?
+::: {.content}
+![TPS](img/TPS.png){width="70%"}
+<br/>
+[Toyota Production System](https://en.wikipedia.org/wiki/Toyota_Production_System)
 :::
 
-::: {.fragment .bubble-left}
-Yeah! What time does it start?
+## {.image-right}
+
+::: columns
+::: {.column width="45%"}
+### O pensamento de Taiishi Ohno
+::: {style="font-size: 0.7em;font-style: italic;"}
+- A ausência de problemas é o maior de todos os problemas.
+- Sem padrões não há melhorias. Os padrões não devem ser forçados de cima para baixo, mas criados pelos próprios trabalhadores.
+- O método Toyota não é o de criar resultados trabalhando duro. É um sistema que considera que não há limites para a criatividade das pessoas. As pessoas não vêm para a Toyota para trabalhar, elas vêm para pensar.
+- O local de trabalho é um professor. Você só consegue achar respostas no local de trabalho.
+:::
+:::
+::: {.column width="55%"}
+:::
 :::
 
-::: {.fragment .bubble-right}
-Doors open at 7
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGUXaAxsGsAxYefQmXkx0jP8xJWGu7xSedB_rNaDABBQ&s=10){.image-right}
+
+## 
+
+### Conceitos da Gestão Enxuta
+::: {.container}
+
+[Conforme [@nakamuro_re-translating_2017]]{.content}
+:::
+
+## 
+::: {.columns}
+::: {.column}
+### Kaizen
+- Foi traduzido livremente como "Melhoria Contínua", mas possui um significado mais profundo, conforme pretendido por Taiishi Ohno.
+- Kaizen não é sobre melhorias físicas.
+:::
+
+::: {.column}
+### Kairyo
+- Ohno costumava utilizar a palavra japoneza Kairyo para descrever a melhoria contínua que se concentra principalmente em melhorias físicas, de processos, tecnologias ou máquinas.
 :::
 :::
+Kaizen é sobre mudar o comportamento de alguém para beneficiar os outros. É um estado de espírito.
+
+
+
 
 ## roughnotations
 
@@ -142,3 +219,6 @@ The background colors can be with with, where `#444444` represents the new backg
   box-shadow: #222222 0px 0px 30px 0px;
 }
 ```
+## Referências {.scrollable}
+::: {#refs}
+:::
