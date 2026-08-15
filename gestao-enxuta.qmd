@@ -17,7 +17,8 @@ bibliography: references.bib
 ::: {.columns}
 ::: {.column }
 ### Objetivo de Aprendizagem:
-- O aluno será capaz de identificar os principais conceitos da Gestão Enxuta e elaborar um plano de ação considerando os desperdícios definidos na Gestão Enxuta.
+- O aluno será capaz de identificar os principais conceitos da Gestão Enxuta. 
+- Elaborar um plano de ação considerando os desperdícios definidos na Gestão Enxuta.
 :::
 ::: {.column}
 ![O Pensador - Auguste Rodin](https://upload.wikimedia.org/wikipedia/commons/a/a4/Le_Penseur_by_Rodin_%28Kunsthalle_Bielefeld%29_2014-04-10.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original)
