@@ -314,7 +314,7 @@ Domenica DeGrandis[@degrandis_making_2022]
 
 ### Quanto tempo leva para assar uma pizza?      
 
-:::{.fragment fragment-index=0}
+:::{.fragment fragment-index=3}
 ![](img/pizza1.png){.absolute top=180 left=100 width="320" height="240"}
 :::
 
@@ -322,15 +322,15 @@ Domenica DeGrandis[@degrandis_making_2022]
 ![](img/pizza2.png){.absolute top=200 left=440 width="100" height="220"}
 :::
 
-:::{.fragment fragment-index=1}
+:::{.fragment fragment-index=0}
 ![](img/pizza3.png){.absolute top=200 left=560 width="170" height="150"}
 :::
 
-:::{.fragment fragment-index=2}
+:::{.fragment fragment-index=1}
 ![](img/pizza4.png){.absolute top=200 left=750 width="150" height="150"}
 :::
 
-:::{.fragment fragment-index=3}
+:::{.fragment fragment-index=2}
 ![](img/pizza5.png){.absolute top=350 left=550 width="370" height="90"}
 :::
 
