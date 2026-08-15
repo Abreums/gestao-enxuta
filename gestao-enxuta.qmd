@@ -2,7 +2,6 @@
 title: "Gestão Enxuta"
 subtitle: "Conceitos"
 author: "Marcos Abreu"
-date: "Agosto 2026"
 format: 
   letterbox-revealjs:
     theme: [default, style.scss]
@@ -17,28 +16,15 @@ bibliography: references.bib
 
 ::: {.columns}
 ::: {.column }
-::: {.blockquote}
-Se eu vi mais longe, foi por estar sobre ombros de gigantes.
-:::
-:::
-::: {.column}
-![Isaac Newton](https://upload.wikimedia.org/wikipedia/commons/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original)
-:::
-:::
-:::
-
-## 
-
-::: {.columns}
-::: {.column }
 ### Objetivo de Aprendizagem:
-- O aluno será capaz de identificar os principais conceitos da Gestão Enxuta e a mapear os defeitos a serem evitados em um projeto.
+- O aluno será capaz de identificar os principais conceitos da Gestão Enxuta e elaborar um plano de ação considerando os desperdícios definidos na Gestão Enxuta.
 :::
 ::: {.column}
 ![O Pensador - Auguste Rodin](https://upload.wikimedia.org/wikipedia/commons/a/a4/Le_Penseur_by_Rodin_%28Kunsthalle_Bielefeld%29_2014-04-10.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original)
 :::
 :::
 :::
+
 
 ## 
 
@@ -137,25 +123,26 @@ Taiishi Ohno
 ## 
 
 ### Conceitos da Gestão Enxuta
-::: {.container}
+<br/>
 
-[Conforme [@nakamuro_re-translating_2017]]{.content}
+::: {.container}
+Conforme [@nakamuro_re-translating_2017]
 :::
 
 ## 
 ::: {.columns}
 ::: {.column}
-### Kaizen
+### [Kaizen]{.rn-fragment rn-type=circle rn-color=yellow}
 - Foi traduzido livremente como "Melhoria Contínua", mas possui um significado mais profundo, conforme pretendido por Taiishi Ohno.
 - Kaizen não é sobre melhorias físicas.
 :::
 
 ::: {.column}
-### Kairyo
+### [Kairyo]{.rn-fragment rn-type=circle rn-color=yellow}
 - Ohno costumava utilizar a palavra japoneza Kairyo para descrever a melhoria contínua que se concentra principalmente em melhorias físicas, de processos, tecnologias ou máquinas.
 :::
 :::
-Kaizen é sobre mudar o comportamento de alguém para beneficiar os outros. É um estado de espírito.
+[Kaizen é sobre mudar o comportamento de alguém para beneficiar os outros. É um estado de espírito.]{.rn-fragment rn-type=underline rn-color=#ebd728}
 
 ##
 
@@ -165,9 +152,20 @@ Kaizen é sobre mudar o comportamento de alguém para beneficiar os outros. É u
 
 ### Jidoka
 
-- O TPS possui 2 pilares: Just-in-Time e Jidoka.
-- Manuais _Lean_ explicam que a palavra **Jidoka** significa "humanos ajudando máquinas quando erros acontecem".
-- Costuma ser traduzido como "automação com um toque humano".
+::: {.columns style="display: flex;"}
+::: {.column width=45%  style="flex: 1;font-size:0.8em"}
+- O TPS possui 2 pilares: [Just-in-Time]{.rn-fragment rn-type=underline rn-color=#edeace}
+ e [Jidoka]{.rn-fragment rn-type=underline rn-color=#edeace}.
+- Manuais _Lean_ explicam que a palavra *Jidoka* significa "humanos ajudando máquinas quando erros acontecem".
+- Costuma ser traduzido como:
+  - [automação com um toque humano]{.rn-fragment rn-type=box rn-color=yellow}.
+:::
+
+::: {.column style="flex: 1; display: flex; flex-direction: column; justify-content: top; align-items: right; gap: 10px; text-align: right;"}
+![](img/TPS.png){width="80%"}
+:::
+:::
+
 
 ##
 
@@ -175,14 +173,12 @@ Kaizen é sobre mudar o comportamento de alguém para beneficiar os outros. É u
 
 
 ::: {.columns style="display: flex;"}
-
 ::: {.column width="60%" style="flex: 1;font-size:0.7em"}
-- Ohno queria que o trabalhador fosse capaz de diferenciar o "trabalho verdadeiro" de "movimentação".
+- Ohno queria que o trabalhador fosse capaz de diferenciar o ["trabalho verdadeiro"]{.rn-fragment rn-type=box rn-color=yellow} de ["movimentação"]{.rn-fragment rn-type=box rn-color=yellow}.
   - Todo movimento que agrega valor ao produto é chamado de "trabalho verdadeiro".
   - Movimento que não agrega valor é chamado de "movimentação" e é considerado um desperdício.
-- A forma mais efetiva de identificar o "trabalho verdadeiro" da "movimentação" é através da participação direta no local de trabalho (Gemba).
+- A forma mais efetiva de identificar o "trabalho verdadeiro" da "movimentação" é através da [participação direta no local de trabalho (Gemba)]{.rn-fragment rn-type=underline rn-color=yellow}.
 :::
-
 ::: {.column style="flex: 1; display: flex; flex-direction: column; justify-content: top; align-items: right; gap: 10px; text-align: right;"}
 ![](img/move-around.png){style="max-height: 280px;"}
 ![](img/true-work.png){style="max-height: 260px;"}
@@ -191,15 +187,59 @@ Kaizen é sobre mudar o comportamento de alguém para beneficiar os outros. É u
 
 :::
 
-
-
-
-
 ## 
 
 ![](img/7-wastes.png)
 
-## 
+## Exercício
+
+Identifique os 7 desperdícios conforme são apresentados no vídeo deste [link](https://www.youtube.com/watch?v=CJSZj9bShAI&list=PLRUJVODggDtOkOhYGzQ4hmxv_irReNKSs&index=14).
+
+![](img/heffernan.png)
+
+## Exercício
+
+Quais ações apresentadas no vídeo podemos mapear em cada um dos desperdícios?    
+
+```{r}
+library(tidyverse)
+library(gt)
+wastes <- tibble(
+  `Desperdícios na Manufatura` = c("Transporte", "Estoque", "Movimentação", "Espera", "Produção em Excesso", "Processamento em Excesso", "Defeitos"),
+  `Ação` = c(".  .  .", ".  .  .", ".  .  .", ".  .  .", ".  .  .", ".  .  .", ".  .  .")
+)
+wastes |> 
+  gt() |> 
+  opt_stylize(style = 3) |> 
+  tab_style(
+    style = cell_borders(
+      sides = "right",
+      color = "black",
+      weight = px(3),      # Thick line
+      style = "solid"),
+    locations = list(
+      cells_body(columns = everything()),         # Draws line on the right of body cells
+      cells_column_labels(columns = everything()) # Draws line on the right of the header
+    )
+  ) |> 
+  tab_options(
+    table.font.size = px(32) # Changes the entire table size
+  )
+
+``` 
+
+
+##
+:::{.fragment}
+O [segundo pior problema]{.rn-fragment rn-type=circle rn-color=yellow} na gestão de projetos de TI é...
+:::
+:::{.fragment}
+![Prato Sujo!](img/prato-sujo.png)
+:::
+
+
+
+## Tecnologia da Informação e Desperdícios da Gestão Enxuta 
 
 ```{r}
 library(tidyverse)
@@ -208,68 +248,110 @@ wastes <- tibble(
   `Desperdícios na Manufatura` = c("Transporte", "Estoque", "Movimentação", "Espera", "Produção em Excesso", "Processamento em Excesso", "Defeitos"),
   `Desperdícios em TI` = c("Hand-offs", "Trabalho parcial", "Troca de tarefas", "Atrasos", "Escopo adicional", "Reaprendizagem", "Defeitos")
 )
-wastes |> gt() |> opt_stylize(style = 3)
-```
+wastes |> 
+  gt() |> 
+  opt_stylize(style = 3) |> 
+   tab_options(
+    table.font.size = px(32) # Changes the entire table size
+  )
 
-## roughnotations
+``` 
 
-[underlined phrase]{.rn-fragment rn-type=underline rn-color=red}
-
-## .image-left {style="text-align: right;"}
-
-::: columns
-::: {.column width="55%"}
-:::
-::: {.column width="45%"}
-It is therefore recommened that you use [multiple columns](https://quarto.org/docs/presentations/index.html#multiple-columns) to only have text on the background area
-:::
+##
+:::{.fragment}
+O [pior problema]{.rn-fragment rn-type=circle rn-color=yellow} na gestão de projetos de TI é...
 :::
 
-![](flowers-two.jpeg){.image-left}
 
-## {background-image="https://placekitten.com/100/100" background-size="100px" background-repeat="repeat"}
+##
+![](img/abel1.png)
 
-::: r-fit-text
-[background images]{style="color: hotpink;"}
+##
+![](img/abel2.png)
+
+##
+![](img/abel3.png)
+
+##
+![](img/abel4.png)
+
+##
+![](img/abel5.png)
+
+##
+![](img/abel6.png)
+
+##
+O [pior problema]{.rn-fragment rn-type=circle rn-color=yellow} ...     
+
+::: {.fragment}
+... o mais cruel, nefasto, pernicioso, impiedoso, desumano, mefistofélico problema na gestão de TI...     
+:::   
+
+:::{.fragment}
+![ESPERA!](img/espera.png){style="max-height: 280px;"}      
+**ESPERA**
 :::
 
-## Setting background colors {background-color="aquamarine"}
+:::{.fragment}
+[QUEM]{.rn-fragment rn-type=circle rn-color=yellow} está esperando?
+:::
 
-you can set your background as you normally would
+##
+![](img/abel8.png)
 
-## Video Slide Title {background-video="video.mp4" background-video-loop="true" background-video-muted="true"}
+## 
+:::{.message-box}
+As datas de vencimento não levam em consideração o tempo de espera. E o problema geralmente não está no tempo de processo, mas no tempo de espera. Concentre-se no tempo de espera e não no tempo de processo.       
 
-This slides's background video will play in a loop with audio muted.
+[Monitore o trabalho, não o trabalhador.]{.rn-fragment rn-type=box rn-color=#5511ba}
 
-## Slide Title {background-iframe="https://example.com"}
+Domenica DeGrandis[@degrandis_making_2022]  
+:::
 
-## Further Modifying theme
+## {background-color="#ffffff" style="color: #232323;"}    
 
-If you want to modify theme, you can specify the `.scss` my modifying the yaml to look like this
+### Quanto tempo leva para assar uma pizza?      
 
-``` yaml
-format: 
-  letterbox-revealjs:
-    theme: [default, style.scss]
-```
+:::{.fragment fragment-index=0}
+![](img/pizza1.png){.absolute top=180 left=100 width="320" height="240"}
+:::
 
-## Modifying letterbox background
+:::{.fragment fragment-index=5}
+![](img/pizza2.png){.absolute top=200 left=440 width="100" height="220"}
+:::
 
-The background colors can be with with, where `#444444` represents the new background color and `#222222` represents the color of the shadow
+:::{.fragment fragment-index=1}
+![](img/pizza3.png){.absolute top=200 left=560 width="170" height="150"}
+:::
 
-``` css
-.quarto-light {
-  background-color: #444444;
-}
+:::{.fragment fragment-index=2}
+![](img/pizza4.png){.absolute top=200 left=750 width="150" height="150"}
+:::
 
-.quarto-dark {
-  background-color: #444444;
-}
+:::{.fragment fragment-index=3}
+![](img/pizza5.png){.absolute top=350 left=550 width="370" height="90"}
+:::
 
-.slides {
-  box-shadow: #222222 0px 0px 30px 0px;
-}
-```
+:::{.fragment fragment-index=4}
+![](img/pizza6.png){.absolute top=450 left=250 width="680" height="90"}
+:::
+
+
+## 
+
+::: {.columns}
+::: {.column }
+::: {.blockquote}
+Se eu vi mais longe, foi por estar sobre ombros de gigantes.
+:::
+:::
+::: {.column}
+![Isaac Newton](https://upload.wikimedia.org/wikipedia/commons/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original)
+:::
+:::
+:::
+
 ## Referências {.scrollable}
 ::: {#refs}
 :::
